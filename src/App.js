@@ -18,6 +18,7 @@ import AddRating from "./components/AddRating/AddRating";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import Engineers from "./components/Dashboard/Dashboard/Engineers/Engineers";
+import TotalOrder from "./components/TotalOrder/TotalOrder";
 
 export const UserContext = createContext();
 function App() {
@@ -56,6 +57,10 @@ function App() {
 
               <Route path="/rating">
                  <AddRating />
+              </Route>
+
+              <Route path="/totalOrder">
+                 <TotalOrder />
               </Route>
               
             <PrivateRoute path="/orders">

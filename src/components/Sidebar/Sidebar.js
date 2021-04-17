@@ -36,6 +36,11 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link to="/totalOrder" className="text-white">
+                        <FontAwesomeIcon icon={faFileAlt} /> <span>Order List</span>
+                    </Link>
+                </li>
+                <li>
                     <Link to="/engineer" className="text-white">
                         <FontAwesomeIcon icon={faFileAlt} /> <span>Add Engineer</span>
                     </Link>
@@ -46,11 +51,7 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faUsers} /> <span>Add Review</span>
                     </Link>
                 </li>
-                <li>
-                    <Link to="/orders" className="text-white">
-                        <FontAwesomeIcon icon={faFileAlt} /> <span>Orders</span>
-                    </Link>
-                </li>
+                
                 
                 <li>
                     <Link to="/doctor/setting" className="text-white" >
