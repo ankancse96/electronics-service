@@ -50,7 +50,17 @@ const Sidebar = () => {
                     <Link to="/rating" className="text-white">
                         <FontAwesomeIcon icon={faUsers} /> <span>Add Review</span>
                     </Link>
-                </li>
+                    </li>
+                    <li>
+                    <Link to="/orders" className="text-white">
+                        <FontAwesomeIcon icon={faUsers} /> <span>Order Details</span>
+                    </Link>
+                    </li>
+                    <li>
+                    <Link to="/orderStatus" className="text-white">
+                        <FontAwesomeIcon icon={faUsers} /> <span>Order Status</span>
+                    </Link>
+                    </li>
                 
                 
                 <li>

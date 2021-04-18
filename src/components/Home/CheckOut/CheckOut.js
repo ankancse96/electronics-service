@@ -24,11 +24,7 @@ const CheckOut = () => {
         .then(data => setServices(data))
     }, [name])
     console.log(services)
-   /* const service = fakeData.filter(serviceData=>serviceData.name === name);
-    console.log(fakeData);
-    console.log(service);
-    const{price,img} = service[0];
-        console.log('this is',name,price,img) */
+
 
         const [loggedInUser, setLoggedInUser] = useContext(UserContext);
         console.log(setLoggedInUser);
@@ -52,7 +48,10 @@ const CheckOut = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            if(data){
+                
+                alert('your order placed successfully')
+              }
         })
           }
     return (
