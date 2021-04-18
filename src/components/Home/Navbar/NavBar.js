@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {LinkContainer} from 'react-router-bootstrap'
 import { Nav,Navbar } from 'react-bootstrap';
+import { UserContext } from '../../../App';
 
 const NavBar = () => {
+  const [loggedInUser,setLoggedInUser] = useContext(UserContext)
+    console.log(setLoggedInUser);
     return (
         <div>
             <Navbar bg="primary" color="white" variant="dark" expand="lg">
@@ -29,7 +32,7 @@ const NavBar = () => {
       <Nav.Link>Deal</Nav.Link>
       </LinkContainer>
       <LinkContainer to="/login">
-      <Nav.Link>Login </Nav.Link>
+      <Nav.Link>Login {loggedInUser.email} </Nav.Link>
       </LinkContainer>
       
     </Nav>
